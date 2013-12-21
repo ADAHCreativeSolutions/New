@@ -8,12 +8,12 @@
 
 <link href="application/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 <link href="application/css/bootstrap.min.css"  rel="stylesheet" type="text/css"/>
-
+<link href="application/js/owl/owl.carousel.css" rel="stylesheet" type="text/css"/>
+<link href="application/js/owl/owl.theme.css" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" type="text/css" href="application/css/style.css"/>
-
 <script type="text/javascript" src="application/js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="application/js/owl/owl.carousel.min.js"></script>
 <script type="text/javascript" src="application/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="application/js/idangerous.swiper-2.1.min.js"></script>
 <script type="text/javascript" src="application/js/script.js"></script>
 
  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -61,20 +61,29 @@
 			<div class="left_arrow"></div>
 
 			<div id="searchBox">
-				<form>
-					<div class="sideBox"></div>
-					
-					<select>
+			
+					<div class="sideBox">
+						<p>Find your event<br/>
+							<span>
+Use some or all filters to locate
+your perfect experience.</span></p>
+
+					</div>
+						<form id="searchForm">
+					<p>Location of venue</p>
+					<p>Event Date</p>
+					<p>Adults</p>
+					<div class="clear"></div>
+					<select id="sel_v" class="form-control" >
 						<option>Select</option>
 					</select>
 
-						<select>
-						<option>Select</option>
+						<input id="sel_d" type="text" class="form-control"/>
+					<select id="sel_a" class="form-control" >
+						<option>1</option>
 					</select>
 
-						<select>
-						<option>Select</option>
-					</select>
+					<input type="submit" value=" Book Now " class="inputBtn"/>
 				
 				
 
@@ -83,16 +92,65 @@
 			</div>
 
 
-		<div id="slides">
+		<div id="slides" class="owl-carousel">
+			<img src="application/images/slide/1.jpg"/>
 			<img src="application/images/slide/1.jpg"/>
 
 		</div>
 	</div>
 	
 <div id="home-body">
-	<p>&nbsp;</p>
+
 	<div class="h1Title">
 		<h1>Top Events</h1>
+	</div>
+
+	<p>&nbsp;</p>
+
+	<div class="topEvents">
+			<div class="container">
+				<div class="col-md-3">
+					<div>
+						<h1>Dec 13</h1>
+					<img src="application/images/e1.jpg" alt="eventName"/>
+					<p>
+					DSTRKT London</br>
+					Tables from <span> £500</span>
+					</p>
+
+					</div>
+				</div>
+			<div class="col-md-3">
+						<div><h1>Dec 13</h1>
+					<img src="application/images/e2.jpg" alt="eventName"/>
+					<p>
+					DSTRKT London</br>
+					Tables from <span> £500</span>
+					</p></div>
+				</div>
+
+				<div class="col-md-3">
+						<div><h1>Dec 13</h1>
+					<img src="application/images/e3.jpg" alt="eventName"/>
+					<p>
+					DSTRKT London</br>
+					Tables from <span> £500</span>
+					</p>
+				</div>
+				</div>
+
+
+				<div class="col-md-3">
+						<div><h1>Dec 13</h1>
+					<img src="application/images/e4.jpg" alt="eventName"/>
+					<p>
+					DSTRKT London</br>
+					Tables from<span> £500</span>
+					</p>
+				</div>
+				</div>
+
+			</div>
 
 	</div>
 
@@ -100,15 +158,9 @@
 
 <div id="footer">
 	<div class="container">
-		<div class="col-md-4"><p>© 2013 VIPLANS LTD. All Rights Reserved.</p></div>
-		<div class="col-md-4">icons</div>
-		<div class="col-md-4">
-			<a href="#">Home</a>
-			<a href="#">All Venues</a>
-			<a href="#">My Bookings</a>
-			<a href="#">Contact</a>
-
-		</div>
+	
+	<img src="application/images/social_media.jpg" alt=""/>
+		
 
 
 	</div>

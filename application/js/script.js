@@ -20,7 +20,8 @@ mouseDrag:true,
 touchDrag:true,
 responsive:true,
 autoPlay:4000,
-rewindSpeed:false
+rewindSpeed:false,
+pagination:false
 
 });
 
